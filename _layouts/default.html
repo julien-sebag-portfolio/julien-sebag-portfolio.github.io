@@ -18,7 +18,7 @@
           <meta property="og:title" content="{{ page.title }}" />
           <meta property="og:type" content="designer_portfolio" />
           <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-          <meta property="og:image" content="/assets/images/{{ site.cover_og }}" />
+          <meta property="og:image" content="/assets/images/{% if page.url == '/' %}{{ site.cover_og }}{% else %}{{ page.cover }}{% endif %}" />
           <meta property="og:site_name" content="{{ site.title }}" />
           <meta property="og:locale" content="en_GB" />
           <!-- Website Language (see here https://stackoverflow.com/questions/3191664/list-of-all-locales-and-their-short-codes) -->
