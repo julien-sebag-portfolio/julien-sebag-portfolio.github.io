@@ -27,6 +27,17 @@ header {
         @include transition(all, 0.5s, ease);
     }
 
+    .logo {
+        @include flexbox(flex-start, flex-start, nowrap);
+        @include flex-direction(column);
+        @include font-size(16px);
+
+        span {
+            @include font-size(12px);
+            margin-top: 5px;
+        }
+    }
+
     .burger {
         display: none;
     }
