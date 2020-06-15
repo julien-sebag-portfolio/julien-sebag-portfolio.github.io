@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+     <head>
+          <meta charset="UTF-8">
+          <title>Article | Blog Demo</title>
+          <meta content="IE=edge" http-equiv="X-UA-Compatible">
+          <meta content="width=device-width, initial-scale=1" name="viewport">
+          <meta name="description" content="">
+          <meta name="author" content="">
+          <meta property="og:title" content="" />
+          <meta property="og:type" content="" />
+          <meta property="og:url" content="" />
+          <meta property="og:image" content="" />
+          <meta property="og:site_name" content="" />
+          <meta property="og:locale" content="en_GB" />
+          <!-- Website Language (see here https://stackoverflow.com/questions/3191664/list-of-all-locales-and-their-short-codes) -->
+          <link href="assets/images/" rel="shortcut icon">
+
+          <!-- CSS -->
+          <link rel="stylesheet" href="assets/css/blog-demo.css">
+          <link rel="stylesheet" href="assets/css/font-awesome-all.min.css">
+     </head>
+
+     <body >
+          <header class="header ">
+               <a href="index.html" class="logo">Blog <span>Demo</span></a>
+
+               <div class="burger" onclick="openNav(this)">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+               </div>
+
+               <nav>
+                    <ul>
+                         <li><a href="index.html">Home</a></li>
+                         <li><a href="articles-list.html">Articles</a></li>
+                         <li><a href="about.html">About</a></li>
+
+                         <li class="search">
+                              <div class="btn-search" onclick="openSearch(this)"><i class="fas fa-search"></i></div>
+                              <div class="search-container">
+                                   <i class="fas fa-times" onclick="closeSearch(this)"></i>
+                                   <div class="content">
+                                        <div class="input-search-container">
+                                             <input type="text" placeholder="Search here">
+                                        </div>
+
+                                        <ul class="tags">
+                                             <li><a href="category.html">Illustration</a></li>
+                                             <li><a href="category.html">Design</a></li>
+                                             <li><a href="categories-list.html">All categories</a></li>
+                                        </ul>
+                                   </div>
+                              </div>
+                         </li>
+                    </ul>
+               </nav>
+          </header>
+
+          <div class="cover ">
+               <div class="bg-cover">
+                    <picture>
+                         <source media="(max-width: 600px)" srcset="assets/images/s-cover.jpg">
+                         <source media="(max-width: 1024px)" srcset="assets/images/m-cover.jpg">
+                         <img src="assets/images/l-cover.jpg" alt="">
+                    </picture>
+               </div>
+
+               <div class="content">
+                    
+                    <h1>Article</h1>
+                    <ul class="breadcrumbs">
+                         
+                         <li><a href="index.html">Home</a></li>
+                         
+                         
+                         <li>Article</li>
+                         
+                         
+                    </ul>
+                    
+               </div>
+          </div>
+
+          <main class="container">
+               <div class="content-container">
+                    <div class="col-content blog-container">
+                         <div class="article-container">
+     <picture>
+          <source media="(max-width: 600px)" srcset="assets/images/s-image-1.jpg">
+          <source media="(max-width: 1024px)" srcset="assets/images/m-image-1.jpg">
+          <img src="assets/images/l-image-1.jpg" alt="Image">
+     </picture>
+     <h3>Heading 3</h3>
+
+     <h4>Heading 4</h4>
+
+     <h5>Heading 5</h5>
+
+     <h6>Heading 6</h6>
+
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, eius mollitia suscipit, quisquam doloremque distinctio perferendis et doloribus unde architecto optio laboriosam porro adipisci sapiente officiis nemo accusamus ad praesentium? Esse minima nisi et. Dolore perferendis, enim praesentium omnis, iste doloremque quia officia optio deserunt molestiae voluptates soluta architecto tempora.</p>
+
+     <p><a href="#">link</a></p>
+
+     <p><em>italic</em></p>
+
+     <p><strong>bold</strong></p>
+
+     <p><strong><em>bold italic</em></strong></p>
+
+     <ul>
+          <li>Unordered Unordered Unordered Unordered Unordered Unordered Unordered Unordered Unordered Unordered
+               Unordered Unordered Unordered Unordered Unordered Unordered Unordered Unordered</li>
+          <li>Unordered
+               <ul>
+                    <li>Ordered sub</li>
+               </ul>
+          </li>
+          <li>Unordered</li>
+     </ul>
+
+     <ol>
+          <li>Ordered</li>
+          <li>Ordered</li>
+     </ol>
+
+     <blockquote>
+          <p>Blockquote super long inventore animi, maxime sapiente optio, illo est nemo veritatis repellat sunt
+               inventore animi, maxime sapiente optio, illo est nemo veritatis repellat sunt inventore animi, maxime
+               sapiente optio, illo est nemo veritatis repellat sunt</p>
+     </blockquote>
+
+     <iframe src="https://www.youtube.com/embed/jmzf9kaHD8w" frameborder="0" allowfullscreen=""
+          class="iframe-youtube"></iframe>
+
+     <p><img src="assets/images/img-article.jpg" alt="Image" /></p>
+
+</div>
+
+<hr />
+
+<div class="tags">
+     <ul class="tags-list">
+          <li>Life</li>
+          <li>Sport</li>
+          <li>Tech</li>
+          <li>Travel</li>
+     </ul>
+
+     <ul class="social">
+          <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+     </ul>
+</div>
+
+
+<div class="comments">
+     <h3>Comments</h3>
+     <ul class="list-comments">
+          <li>
+               <p class="name">Foo</p>
+               <p class="meta">Posted the 3 May 2020 at 14:12</p>
+               <p class="content-comment">Super interesting article!</p>
+          </li>
+
+          <li>
+               <p class="name">Bar</p>
+               <p class="meta">Posted the 2 May 2020 at 13:25</p>
+               <p class="content-comment">I like your way of thinking, maybe we could discuss about it with a drink?</p>
+          </li>
+     </ul>
+
+     <h4>Post your comment</h4>
+     <form action="" class="form">
+          <ul>
+               <li>
+                    <label for="name">Your name</label>
+                    <input type="text" name="name" id="name">
+               </li>
+
+               <li>
+                    <label for="comment">Your comment</label>
+                    <textarea name="comment" id="comment"></textarea>
+               </li>
+
+               <div class="container-send">
+                    <input type="submit" value="Send" class="btn btn-primary">
+               </div>
+          </ul>
+     </form>
+</div>
+                    </div>
+
+                    
+                    <aside>
+                         
+                         <p class="meta">Published on 20 May 2020 in <a href="category.html">Category</a> by <a
+                                   href="author.html">Author</a>.</p>
+                         
+
+                         
+                         <div class="list-aside">
+                              <h5>Categories</h5>
+                              <ul>
+                                   <li><a href="category.html">Illustration</a></li>
+                                   <li><a href="category.html">Application</a></li>
+                                   <li><a href="category.html">Design</a></li>
+                                   <li><a href="categories-list.html">All the categories</a></li>
+                              </ul>
+                         </div>
+                         
+
+                         
+                         <div class="list-aside">
+                              <h5>Our authors</h5>
+                              <ul>
+                                   <li><a href="author.html">Roger Scott</a></li>
+                                   <li><a href="author.html">Aria Crosby</a></li>
+                                   <li><a href="author.html">Joey Dixon</a></li>
+                                   <li><a href="authors-list.html">All authors</a></li>
+                              </ul>
+                         </div>
+                         
+                    </aside>
+                    
+               </div>
+          </main>
+
+          <footer>
+               <p class="logo">Blog <span>Demo</span></p>
+
+               <ul class="social">
+                    <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+               </ul>
+          </footer>
+
+          <div class="download">
+               <p>Download this template:</p>
+               <div class="btn-download">
+                    <i onclick="openDownload(this)"><img src="assets/images/download.svg" alt=""></i>
+                    <a href="https://github.com/JulSeb42/blog-template-html" target="_blank"><img src="assets/images/logo-html.svg" alt=""></a>
+                    <a href="https://github.com/JulSeb42/blog-template-jekyll" target="_blank"><img src="assets/images/logo-jekyll.svg" alt=""></a>
+               </div>
+
+               <a href="https://www.julien-sebag.fr/templates/" class="back-portfolio">Back to portfolio</a>
+          </div>
+
+          <script src="assets/js/script.js"></script>
+     </body>
+</html>

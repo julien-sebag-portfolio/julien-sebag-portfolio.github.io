@@ -1,0 +1,392 @@
+/*============================================================= Header ============================================================= */
+
+header {
+    @include flexbox(center, space-between, nowrap);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    padding: 20px 5%;
+    @include body-bold;
+    @include transition(all, 0.5s, ease);
+
+    .links,
+    a {
+        color: $white;
+        text-decoration: none;
+        @include font-size(14px);
+        line-height: 20px;
+        text-transform: uppercase;
+        cursor: pointer;
+        @extend %paMar;
+    }
+
+    .links,
+    .logo {
+        @include transition(all, 0.5s, ease);
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .nav {
+        @extend %ulNone;
+        @include flexbox(center, flex-start, nowrap);
+
+        li {
+            position: relative;
+            line-height: 20px;
+
+            &:after {
+                content: "";
+                width: 0;
+                background-color: $white;
+                height: 2px;
+                position: absolute;
+                right: 0;
+                bottom: -2px;
+                @include transition(all, 0.2s, ease);
+                @include transition-timing(cubic-bezier(0.25, 0.75, 0, 0.66));
+                @media (hover: none) and (pointer: coarse) {
+                    content: normal;
+                }
+            }
+
+            &:hover:after {
+                width: 100%;
+                @include transition-timing(cubic-bezier(0.75, 0.25, 1, 0.34));
+            }
+
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+
+            .links {
+                float: left;
+            }
+
+            .modal {
+                position: fixed;
+                top: 0;
+                left: -100%;
+                z-index: 999;
+                background-color: $gray;
+                width: 100%;
+                height: 100vh;
+                @include flexbox(center, center, nowrap);
+                @include transition(all, 0.5s, ease-out);
+                @include transition-timing(cubic-bezier(0.75, 0.25, 1, 0.34));
+
+                .close {
+                    position: absolute;
+                    top: 24.5px;
+                    right: 5%;
+                    width: 30px;
+                    height: 10px;
+                    cursor: pointer;
+                    @include transition(all, 0.4s, ease);
+                    @include transition-delay(1.4s);
+                    opacity: 0;
+                    z-index: 999;
+
+                    span {
+                        width: 100%;
+                        float: left;
+                        height: 2px;
+                        background-color: $white;
+                        position: absolute;
+                        left: 0;
+
+                        &:first-child {
+                            top: 4px;
+                            @include transform(rotate(45deg));
+                        }
+
+                        &:last-child {
+                            bottom: 4px;
+                            @include transform(rotate(-45deg));
+                        }
+                    }
+                }
+
+                .content-modal {
+                    max-width: 40vw;
+
+                    @media (max-width: $breakpoint-tablet) {
+                        max-width: 70vw;
+                    }
+
+                    @media (max-width: $breakpoint-mobile) {
+                        max-width: 90vw;
+                    }
+
+                    p,
+                    a {
+                        @include font-size(2.5vw);
+                        line-height: normal;
+
+                        @media (max-width: $breakpoint-tablet) {
+                            @include font-size(28px);
+                        }
+                    }
+
+                    .delay-1,
+                    .delay-2,
+                    .delay-3 {
+                        @include transition(all, 0.4s, ease);
+                        opacity: 0;
+                        @include transform(translateX(-10px));
+                    }
+
+                    .delay-1 {
+                        @include transition-delay(0.8s);
+                    }
+
+                    .delay-2 {
+                        @include transition-delay(1s);
+                    }
+
+                    .delay-3 {
+                        @include transition-delay(1.2s);
+                    }
+
+                    .social {
+                        @extend %ulNone;
+                        @include flexbox(center, flex-start, wrap);
+
+                        li {
+                            width: 50%;
+                            margin-right: 0;
+                            margin-bottom: 1vw;
+
+                            &:after {
+                                content: normal;
+                            }
+
+                            a {
+                                width: auto;
+                                position: relative;
+
+                                &:after {
+                                    content: "";
+                                    width: 0;
+                                    background-color: $white;
+                                    height: 2px;
+                                    position: absolute;
+                                    right: 0;
+                                    bottom: -2px;
+                                    @include transition(all, 0.2s, ease);
+                                    @include transition-timing(
+                                        cubic-bezier(0.25, 0.75, 0, 0.66)
+                                    );
+                                }
+
+                                &:hover:after {
+                                    width: 100%;
+
+                                    @include transition-timing(
+                                        cubic-bezier(0.75, 0.25, 1, 0.34)
+                                    );
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.nav-open {
+                .modal {
+                    left: 0;
+
+                    .close {
+                        opacity: 1;
+                    }
+
+                    .content-modal {
+                        .delay-1,
+                        .delay-2,
+                        .delay-3 {
+                            opacity: 1;
+
+                            @include transform(translateX(0));
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.header-black,
+    &.header-scroll {
+        .links {
+            color: $black;
+        }
+
+        .logo {
+            color: $black;
+        }
+
+        .nav li:after {
+            background-color: $black !important;
+        }
+
+        .burger span {
+            background-color: $black;
+        }
+    }
+}
+
+#home .header-black,
+#home .header-scroll {
+    .burger span {
+        background-color: $white !important;
+    }
+
+    .links {
+        color: $white !important;
+    }
+
+    .logo {
+        color: $white !important;
+    }
+
+    .nav li:after {
+        background-color: $white !important;
+    }
+}
+
+@media (hover: none) and (pointer: coarse) {
+    .links:after {
+        content: normal;
+    }
+}
+
+@media (max-width: $breakpoint-mobile) {
+    header {
+        .burger {
+            width: 30px;
+            height: 20px;
+            position: relative;
+            float: left;
+            cursor: pointer;
+            display: inherit;
+            z-index: 997;
+
+            span {
+                background-color: $white;
+                height: 2px;
+                width: 100%;
+                float: left;
+                position: absolute;
+                left: 0;
+
+                @include transition(all, 0.3s, ease);
+
+                &:first-child {
+                    top: 0;
+                }
+
+                &:nth-child(2) {
+                    top: 45%;
+                }
+
+                &:last-child {
+                    bottom: 0;
+                }
+            }
+        }
+
+        .nav {
+            position: fixed;
+            left: 100%;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: $gray;
+            z-index: 996;
+            @include transition(all, 0.5s, ease);
+            @include transition-timing(cubic-bezier(0.75, 0.25, 1, 0.34));
+            @include flexbox(center, center, nowrap);
+            flex-direction: column;
+
+            li {
+                &:not(:last-child) {
+                    margin-right: 0;
+                    margin-bottom: 8vh;
+                }
+
+                .links {
+                    @include font-size(28px);
+                }
+
+                &:first-child a.links,
+                &:first-child p.links {
+                    @include fade-delay(0.7s);
+                }
+
+                &:nth-child(2) a.links,
+                &:nth-child(2) p.links {
+                    @include fade-delay(0.9s);
+                }
+
+                &:nth-child(3) a.links,
+                &:nth-child(3) p.links {
+                    @include fade-delay(1.1s);
+                }
+
+                &:last-child a.links,
+                &:last-child p.links {
+                    @include fade-delay(1.3s);
+                }
+            }
+        }
+
+        &.menu-open {
+            .burger span {
+                &:first-child {
+                    @include transform(rotate(45deg));
+                    top: 45%;
+                }
+
+                &:nth-child(2) {
+                    width: 0;
+                    opacity: 0;
+                }
+
+                &:last-child {
+                    @include transform(rotate(-45deg));
+                    bottom: 45%;
+                }
+            }
+
+            .nav {
+                left: 0;
+
+                li {
+                    &:first-child .links,
+                    &:nth-child(2) .links,
+                    &:nth-child(3) .links,
+                    &:last-child .links {
+                        @include fade-end;
+                    }
+                }
+            }
+        }
+
+        &.menu-open.header-scroll {
+            .burger span {
+                background-color: $white;
+            }
+
+            .links {
+                color: $white;
+
+                &:after {
+                    background-color: $white;
+                }
+            }
+        }
+    }
+}

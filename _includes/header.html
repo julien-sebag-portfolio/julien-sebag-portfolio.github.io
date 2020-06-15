@@ -1,0 +1,27 @@
+<header class="header {% if page.header_black == true %}header-black{% endif %}">
+    <a href="/" class="logo">Julien Sebag</a>
+
+    <div class="burger" onclick="openMenu(this)">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+    <ul class="nav">
+        {% for item in site.data.nav %}
+        {% if item.url == "about" %}
+        <li>
+            <a class="links" href="#" onclick="openNav(this)">{{ item.name }}</a>
+            <div class="modal">{% include about.html %}</div>
+        </li>
+        {% elsif item.url == "contact" %}
+        <li>
+            <a class="links" href="#" onclick="openNav(this)">{{ item.name }}</a>
+            <div class="modal">{% include contact.html %}</div>
+        </li>
+        {% else %}
+        <li><a href="{{ item.url }}" class="links">{{ item.name }}</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</header>

@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<div class="cover-projects {% if page.header_black == true %}cover-black{% endif %}">
+    <div class="img-cover">
+        <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/s-{{ page.cover }}" />
+            <source media="(max-width: 900px)" srcset="/assets/images/m-{{ page.cover }}" />
+            <img src="/assets/images/l-{{ page.cover }}" alt="{{ page.alt_cover }}" />
+        </picture>
+    </div>
+    <div class="content-cover">
+        <h1 class="fade fade-delay-1">{{ page.title }}</h1>
+        <h2 class="fade fade-delay-2">{{ page.subtitle }}</h2>
+        <h2 class="fade fade-delay-3">{{ page.position }}</h2>
+        <h2 class="fade fade-delay-4">{{ page.city }}</h2>
+    </div>
+</div>
+
+<main class="container-projects">
+    <div class="content">
+        <div class="container-content">
+            <ul class="skills">
+                {% for skill in page.skills %}
+                <li class="fade">{{ skill }}</li>
+                {% endfor %}
+            </ul>
+            {{ content }}
+        </div>
+    </div>
+    {% if page.title != "Templates" %}
+    <a href="/projects/{{ page.next_project }}/" class="btn-next fade">Next Project</a>
+    {% endif %}
+</main>
+

@@ -1,0 +1,193 @@
+/*============================================================= UI Components ============================================================= */
+
+.btn-cv {
+    font-size: 1.3vw !important;
+    line-height: 1.3vw * 1.4;
+    padding: 0.5vw 1vw;
+    border: 1px solid $white;
+    @include transition(all, 0.2s, ease);
+
+    &:hover {
+        color: $blue;
+        border: 1px solid $blue;
+    }
+
+    &:after {
+        content: normal;
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+        font-size: 22px !important;
+        line-height: 22px * 1.4;
+        padding: 10px 20px;
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+        font-size: 18px !important;
+        line-height: 18px * 1.4;
+    }
+}
+
+.btn-next {
+    width: 100%;
+    float: left;
+    height: 25vh;
+    max-height: 300px;
+    background: $black;
+    @include flexbox(center, center, nowrap);
+    color: $white;
+    @include font-size(2vw);
+    position: relative;
+    z-index: 3;
+    text-decoration: none;
+    text-transform: uppercase;
+    @include transition(all, 0.2s, ease);
+
+    &:hover {
+        background-color: $gray;
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+        @include font-size(32px);
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+        @include font-size(24px);
+    }
+}
+
+.bg-stripes-1 {
+    background-image: linear-gradient(currentColor 1px, transparent 1px),
+        linear-gradient(to right, currentColor 1px, transparent 1px);
+    background-size: 50px 50px;
+}
+
+.bg-stripes-2 {
+    background-image: radial-gradient(currentColor 1px, transparent 1px);
+    background-size: calc(10 * 1px) calc(10 * 1px);
+}
+
+.bg-stripes-3 {
+    background-image: radial-gradient(currentColor 2px, transparent 2px), radial-gradient(currentColor 2px, transparent 2px);
+    background-size: calc(20 * 2px) calc(20 * 2px);
+    background-position: 0 0, calc(10 * 2px) calc(10 * 2px);
+}
+
+.bg-stripes-4 {
+    background-image: repeating-linear-gradient(
+        to right,
+        currentColor,
+        currentColor 1px,
+        transparent 1px,
+        transparent
+    );
+    background-size: 10px 10px;
+}
+
+.bg-stripes-5 {
+    background-image: repeating-linear-gradient(
+        45deg,
+        currentColor 0,
+        currentColor 1px,
+        transparent 0,
+        transparent 50%
+    );
+    background-size: 10px 10px;
+}
+
+.bg-stripes-6 {
+    background: linear-gradient(135deg, currentColor 25%, transparent 25%) -25px
+            0,
+        linear-gradient(225deg, currentColor 25%, transparent 25%) -25px 0,
+        linear-gradient(315deg, currentColor 25%, transparent 25%),
+        linear-gradient(45deg, currentColor 25%, transparent 25%);
+    background-size: calc(2 * 25px) calc(2 * 25px);
+}
+
+.bg-stripes-7 {
+    background: linear-gradient(135deg, currentColor 25%, transparent 25%) -50px
+            0,
+        linear-gradient(225deg, currentColor 25%, transparent 25%) -50px 0,
+        linear-gradient(315deg, currentColor 25%, transparent 25%),
+        linear-gradient(45deg, currentColor 25%, transparent 25%);
+    background-size: calc(2 * 50px) calc(2 * 50px);
+}
+
+.bg-stripes-8 {
+    background: linear-gradient(135deg, currentColor 25%, transparent 25%) -10px
+            0,
+        linear-gradient(225deg, currentColor 25%, transparent 25%) -10px 0,
+        linear-gradient(315deg, currentColor 25%, transparent 25%),
+        linear-gradient(45deg, currentColor 25%, transparent 25%);
+    background-size: calc(2 * 10px) calc(2 * 10px);
+}
+
+.bg-stripes-9 {
+    background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 25px,
+        currentColor 25px,
+        currentColor calc(2 * 25px)
+    );
+}
+
+.bg-stripes-10 {
+    background-image: linear-gradient(0deg, transparent 50%, currentColor 50%);
+    background-size: 10px 10px;
+}
+
+.bg-stripes-11 {
+    background-image: radial-gradient(currentColor 1.5px, transparent 1.5px);
+    background-size: calc(10 * 1.5px) calc(10 * 1.5px);
+}
+
+// Fade In Animation
+
+.fade {
+    $translate: 5px;
+    opacity: 0 !important;
+    @include transform(translateX(-$translate));
+    @include transition(all, 0.8s, ease);
+
+    &.fade-delay-0 {
+        @include transition-delay(0);
+    }
+
+    &.fade-delay-1 {
+        @include transition-delay(0.2s);
+    }
+
+    &.fade-delay-2 {
+        @include transition-delay(0.4s);
+    }
+
+    &.fade-delay-3 {
+        @include transition-delay(0.6s);
+    }
+
+    &.fade-delay-4 {
+        @include transition-delay(0.8s);
+    }
+
+    &.fade-delay-5 {
+        @include transition-delay(1s);
+    }
+
+    &.fade-delay-6 {
+        @include transition-delay(1.2s);
+    }
+
+    &.fade-right {
+        @include transform(translateX($translate));
+    }
+}
+
+.is-visible {
+    opacity: 1 !important;
+    transform: translateX(0);
+
+    &.fade-right {
+        @include transform(translateX(0));
+    }
+}

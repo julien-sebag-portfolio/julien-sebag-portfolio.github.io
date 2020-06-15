@@ -1,0 +1,55 @@
+footer {
+    width: 100%;
+    float: left;
+    @include flexbox(center, space-between, nowrap);
+    padding: 10px 5%;
+    @include font-size(18px);
+    background-color: $footer;
+    position: relative;
+    z-index: 1;
+
+    @media (max-width: $breakpoint-mobile) {
+        flex-direction: column;
+    }
+
+    p,
+    a {
+        @include font-size(14px);
+    }
+
+    .social {
+        @extend %ulNone;
+		@include flexbox(center, flex-start, nowrap);
+		
+        @media (max-width: $breakpoint-mobile) {
+            @include flexbox(center, center, wrap);
+        }
+
+        li:not(:last-child) {
+            margin-right: 10px;
+        }
+
+        a {
+            color: $white;
+            text-decoration: none;
+            position: relative;
+
+            &:after {
+                content: "";
+                width: 0;
+                height: 2px;
+                position: absolute;
+                right: 0;
+                bottom: -2px;
+                background-color: $white;
+                @include transition(all, 0.2s, ease);
+                @include transition-timing(cubic-bezier(0.25, 0.75, 0, 0.66));
+            }
+
+            &:hover:after {
+                width: 100%;
+                @include transition-timing(cubic-bezier(0.75, 0.25, 1, 0.34));
+            }
+        }
+    }
+}
