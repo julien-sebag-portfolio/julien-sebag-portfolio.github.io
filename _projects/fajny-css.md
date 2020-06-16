@@ -1,6 +1,6 @@
 ---
 title: Fajny CSS
-desc: Project Fajny CSS done in Hamburg, Germany
+desc: Project Fajny CSS, SCSS framework under MIT license
 order: 1
 bg_color: white
 header_black: false
