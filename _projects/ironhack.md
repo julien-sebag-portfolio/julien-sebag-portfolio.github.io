@@ -1,6 +1,5 @@
 ---
 title: Ironhack
-layout: projects
 desc: Projects done at Ironhack, Paris, France
 order: 4
 header_black: false

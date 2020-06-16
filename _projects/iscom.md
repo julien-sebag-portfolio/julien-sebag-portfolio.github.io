@@ -1,6 +1,5 @@
 ---
 title: ISCOM
-layout: projects
 desc: Projects done at ISCOM, Lyon, France
 order: 6
 bg_color: yellow

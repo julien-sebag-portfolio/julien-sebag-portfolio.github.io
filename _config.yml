@@ -22,3 +22,15 @@ sass:
     sass_dir: _sass
 
 permalink: /:projects/:name/
+
+defaults:
+  -
+    scope:
+      type: projects
+    values:
+      layout: projects
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"

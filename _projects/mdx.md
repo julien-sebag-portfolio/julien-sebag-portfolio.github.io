@@ -1,6 +1,5 @@
 ---
 title: Middlesex University
-layout: projects
 desc: Projects done at Middlesex University, London, UK
 order: 5
 bg_color: blue

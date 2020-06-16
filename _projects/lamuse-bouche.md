@@ -1,6 +1,5 @@
 ---
 title: L'Amuse Bouche
-layout: projects
 desc: Projects done for L'Amuse Bouche, Lyon, France
 order: 3
 bg_color: green

@@ -1,6 +1,5 @@
 ---
 title: Emy Agency
-layout: projects
 desc: Projects done for Emy Agency, Brussels, Belgium
 order: 2
 bg_color: red

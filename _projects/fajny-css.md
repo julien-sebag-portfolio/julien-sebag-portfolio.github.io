@@ -1,6 +1,5 @@
 ---
 title: Fajny CSS
-layout: projects
 desc: Project Fajny CSS done in Hamburg, Germany
 order: 1
 bg_color: white
