@@ -7,19 +7,19 @@ layout: default
         <picture>
             <source media="(max-width: 600px)" srcset="/assets/images/s-{{ page.cover }}" />
             <source media="(max-width: 900px)" srcset="/assets/images/m-{{ page.cover }}" />
-            <img src="/assets/images/l-{{ page.cover }}" alt="{{ page.alt_cover }}" />
+            <img src="/assets/images/l-{{ page.cover }}" alt="Cover {{ page.title }}" />
         </picture>
     </div>
     <div class="content-cover">
         <h1 class="fade fade-delay-1">{{ page.title }}</h1>
         {% if page.subtitle %}
-        <h2 class="fade fade-delay-2">{{ page.subtitle }}</h2>
+        <h2 class="fade fade-delay-2">{% t page.subtitle %}</h2>
         {% endif %}
         {% if page.position %}
-        <h2 class="fade fade-delay-3">{{ page.position }}</h2>
+        <h2 class="fade fade-delay-3">{% t page.position %}</h2>
         {% endif %}
         {% if page.city %}
-        <h2 class="fade fade-delay-4">{{ page.city }}</h2>
+        <h2 class="fade fade-delay-4">{% t page.city %}</h2>
         {% endif %}
     </div>
 </div>
@@ -36,7 +36,12 @@ layout: default
         </div>
     </div>
     {% if page.title != "Templates" %}
-    <a href="/projects/{{ page.next_project }}/" class="btn-next fade">Next Project</a>
+    {% if site.lang == "fr" %}
+    <a href="/fr/projects/{{ page.next_project }}/" class="btn-next fade">{% t next_button %}</a>
+    {% else %}
+    <a href="/projects/{{ page.next_project }}/" class="btn-next fade">{% t next_button %}</a>
+    {% endif %}
+    
     {% endif %}
 </main>
 

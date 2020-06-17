@@ -9,4 +9,4 @@ img: blog.jpg
 alt_img: Placeholder Blog
 ---
 
-Blog template
+{% tf _templates/blog.md %}

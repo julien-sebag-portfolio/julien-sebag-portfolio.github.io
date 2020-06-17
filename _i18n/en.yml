@@ -1,0 +1,54 @@
+cv: resume-juliensebag.pdf
+
+click_view: Click on image to view
+click_visit: Click on image to visit
+next_button: Next Project
+
+descriptions:
+  home: Portfolio of Julien Sebag, UX / UI / Web designer based in Warsaw, PL.
+  fajny: Project Fajny CSS, SCSS framework under MIT license
+  emy: Projects done for Emy Agency, Brussels, Belgium
+  lab: Projects done for L'Amuse Bouche, Lyon, France
+  ironhack: Projects done at Ironhack, Paris, France
+  mdx: Projects done at Middlesex University, London, UK
+  iscom: Projects done at ISCOM, Lyon, France
+  templates: Responsive HTML and Jekyll templates to download for free
+
+subtitles:
+  fajny: Personal project
+  emy: Web Agency
+  lab: Fast Food Gastronomic
+  ironhack: UX / UI Design Bootcamp
+  mdx: MSc Creative Technology
+  iscom: MA Marketing & Advertising
+  templates: Personal projects
+
+cities:
+  fajny: Hamburg
+  emy: Brussels
+  lab: Lyon
+  ironhack: Paris
+  mdx: London
+  iscom: Lyon
+
+positions:
+  fajny: Designer & Developer
+  emy: Webmaster
+  lab: Designer
+  ironhack: Student
+  mdx: Student
+  iscom: Student
+  templates: Designer & Developer
+
+about:
+  p1: Hi I'm Julien, a French UX / UI / Web Designer currently based in Warsaw, Poland.
+  p2: Currently working as a Product Designer at Nielsen, I create cool interfaces, code websites, and usually drink tea.
+  button: Check my CV
+
+contact:
+  p1: You like what you see and want to work with me, have a coffee or just have a chat?
+  p2: At the moment, I’m based in Warsaw, Poland. You can contact me anytime via any social network or by email!
+
+templates:
+  intro: Responsive HTML and Jekyll templates to download for free. All of these templates have HTML, SASS, SCSS, Less, CSS and JS files included.
+  click_visit: Click on image to see the demo

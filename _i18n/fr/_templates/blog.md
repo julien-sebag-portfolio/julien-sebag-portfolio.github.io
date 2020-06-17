@@ -1,0 +1,1 @@
+Template pour un blog
