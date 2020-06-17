@@ -33,7 +33,6 @@ Tired of using Bootstrap and other heavy CSS frameworks, and reusing a lot of co
     include col-project.html
     text="Design of all the components in Sketch"
     img="components-fajny-css.png"
-    alt_img="Components of Fajny CSS"
     website_ext=false
     side="right"
     bg="1"
@@ -44,7 +43,6 @@ Tired of using Bootstrap and other heavy CSS frameworks, and reusing a lot of co
     include col-project.html
     text="Creation of an icon font in three different weights and brand icons"
     img="icons-fajny-css.png"
-    alt_img="Icons of Fajny CSS"
     website_ext=false
     side="left"
     bg="2"
@@ -55,7 +53,6 @@ Tired of using Bootstrap and other heavy CSS frameworks, and reusing a lot of co
     include col-project.html
     text="Development of the components in HTML and SCSS, and of the documentation website on Jekyll"
     img="website-fajny-css.png"
-    alt_img="Documentation of Fajny CSS"
     website="https://fajny-css.github.io/"
     website_ext=true
     side="right"

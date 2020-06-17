@@ -48,7 +48,6 @@ The idea was to create a live feed in AR, where users will be able to react to o
     include col-project.html
     text="Design of the style of the app"
     img="styles-tele-loisirs.png"
-    alt_img="Styles Télé Loisirs"
     website_ext=false
     side="right"
     bg="5"
@@ -59,7 +58,6 @@ The idea was to create a live feed in AR, where users will be able to react to o
     include col-project.html
     text="Atomic Design of the app"
     img="atomic-tele-loisirs.png"
-    alt_img="Atomic Télé Loisirs"
     website_ext=false
     side="left"
     bg="4"
@@ -70,7 +68,6 @@ The idea was to create a live feed in AR, where users will be able to react to o
     include col-project.html
     text="Mockups of the app"
     img="screens-iphone-tele-loisirs.png"
-    alt_img="Mockups Télé Loisirs"
     website_ext=false
     bg_img=true
     side="right"
@@ -82,7 +79,6 @@ The idea was to create a live feed in AR, where users will be able to react to o
     include col-project.html
     text="Micro Interactions of the app"
     img="poster-tele-loisirs.png"
-    alt_img="IxD Télé Loisirs"
     website_ext=false
     video="https://www.youtube.com/embed/IclZl6n_Bg4"
     side="left"
@@ -109,7 +105,6 @@ Lafayette Gourmet is a store where clients can eat in different restaurants, but
     include col-project.html
     text="Atomic Design of the app"
     img="atomic-design-glg.png"
-    alt_img="Atomic Lafayette Gourmet"
     website_ext=false
     side="right"
     bg="10"
@@ -120,7 +115,6 @@ Lafayette Gourmet is a store where clients can eat in different restaurants, but
     include col-project.html
     text="Mockups of the app"
     img="ecrans-glg.png"
-    alt_img="Mockups Lafayette Gourmet"
     website_ext=false
     bg_img=true
     side="left"
@@ -132,7 +126,6 @@ Lafayette Gourmet is a store where clients can eat in different restaurants, but
     include col-project.html
     text="Micro Interactions of the app"
     img="poster-ixd-glg.png"
-    alt_img="IxD Lafayette Gourmet"
     website_ext=false
     video="https://www.youtube.com/embed/P5WHm6Gi3nM"
     side="right"
@@ -159,7 +152,6 @@ iOS application for National Wellness Institute, which is an organisation allowi
     include col-project.html
     text="Paper prototype of the app"
     img="proto-papier-wellness.png"
-    alt_img="Paper prototype Newmee"
     website_ext=false
     side="left"
     bg="2"
@@ -170,7 +162,6 @@ iOS application for National Wellness Institute, which is an organisation allowi
     include col-project.html
     text="Atomic Design of the app"
     img="atomic-design-wellness.png"
-    alt_img="Atomic Newmee"
     website_ext=false
     side="right"
     bg="6"
@@ -181,7 +172,6 @@ iOS application for National Wellness Institute, which is an organisation allowi
     include col-project.html
     text="Mockups of the app"
     img="ecrans-wellness.png"
-    alt_img="Mockups Newmee"
     website_ext=false
     bg_img=true
     side="left"
@@ -193,7 +183,6 @@ iOS application for National Wellness Institute, which is an organisation allowi
     include col-project.html
     text="Micro Interactions of the app"
     img="poster-wellness.png"
-    alt_img="IxD Newmee"
     website_ext=false
     video="https://www.youtube.com/embed/_6qdeKDAOa0"
     side="right"

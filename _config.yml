@@ -23,16 +23,6 @@ sass:
 
 permalink: /:projects/:name/
 
-plugins:
-  - jekyll-multiple-languages-plugin
-
-languages: ["en", "fr"]
-exclude_from_localizations: ["javascript", "images", "css"]
-defaultLang: en
-languageNames:
-  fr: Français
-  en: English
-
 defaults:
   -
     scope:

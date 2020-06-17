@@ -6,7 +6,6 @@ bg: 3
 bg_color: orange
 link: /blog-demo/
 img: blog.jpg
-alt_img: Placeholder Blog
 ---
 
 Blog template

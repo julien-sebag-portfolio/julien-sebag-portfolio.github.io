@@ -33,7 +33,6 @@ The restaurant L’Amuse Bouche, specialized in "rapid gastronomy", needs to inc
     include col-project.html
     text="Design and development of the restaurant's website"
     img="lab.png"
-    alt_img="Screenshot of the restaurant's website"
     website="http://www.l-ab.fr/"
     website_ext=true
     side="right"
@@ -45,7 +44,6 @@ The restaurant L’Amuse Bouche, specialized in "rapid gastronomy", needs to inc
     include col-project.html
     text="Creation of a sticker's board to show prices in the restaurant"
     img="sticker_bar_mdld.png"
-    alt_img="Stickers board L'Amuse Bouche"
     website_ext=false
     side="left"
     bg="10"
@@ -56,7 +54,6 @@ The restaurant L’Amuse Bouche, specialized in "rapid gastronomy", needs to inc
     include col-project.html
     text="Creation of business cards"
     img="carte_visite_lab.png"
-    alt_img="Business cards L'Amuse Bouche"
     website_ext=false
     bg_img=true
     side="right"
@@ -68,7 +65,6 @@ The restaurant L’Amuse Bouche, specialized in "rapid gastronomy", needs to inc
     include col-project.html
     text="Creation of posters to show in the restaurant and on catering sites"
     img="poster-lab.png"
-    alt_img="Poster L'Amuse Bouche"
     website_ext=false
     side="left"
     bg="6"
@@ -79,7 +75,6 @@ The restaurant L’Amuse Bouche, specialized in "rapid gastronomy", needs to inc
     include col-project.html
     text="Creation of a stickers board to show on catering sites"
     img="sticker-board-lab.png"
-    alt_img="Stickers board L'Amuse Bouche"
     website_ext=false
     side="right"
     bg="1"
@@ -90,7 +85,6 @@ The restaurant L’Amuse Bouche, specialized in "rapid gastronomy", needs to inc
     include col-project.html
     text="Creation of a kakemono to show on catering sites"
     img="kakemono-lab.png"
-    alt_img="Kakemono L'Amuse Bouche"
     website_ext=false
     side="left"
     bg="3"
@@ -101,7 +95,6 @@ The restaurant L’Amuse Bouche, specialized in "rapid gastronomy", needs to inc
     include col-project.html
     text="Creation of flyers to advertise the restaurant"
     img="flyers-lab.png"
-    alt_img="Flyers L'Amuse Bouche"
     website_ext=false
     bg_img=true
     side="right"
