@@ -1,5 +1,5 @@
 ---
-title: ISCOM
+title: ISCOMa
 desc: descriptions.iscom
 order: 6
 bg_color: yellow
