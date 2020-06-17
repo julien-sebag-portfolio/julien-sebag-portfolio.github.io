@@ -1,6 +1,6 @@
 ---
 title: Home
-desc: site.descriptions
+desc: Portfolio of Julien Sebag, UX / UI / Web designer based in Warsaw, PL.
 ---
 
 <ul class="list-projects">
@@ -8,17 +8,10 @@ desc: site.descriptions
     {% for project in projects %}
     <li class="fade fade-delay-{{ project.order }}">
         <div class="bg-stripes-{{ project.order }} bg-{{ project.bg_color }}"></div>
-        {% if site.lang == "fr" %}
-        <a href="/fr{{ project.url }}" style="background: url(/assets/images/l-{{project.cover}})">
-            <p class="project-title">{{ project.title }}</p>
-            <p class="project-position">{% t project.position %}</p>
-        </a>
-        {% else %}
         <a href="{{ project.url }}" style="background: url(/assets/images/l-{{project.cover}})">
             <p class="project-title">{{ project.title }}</p>
-            <p class="project-position">{% t project.position %}</p>
+            <p class="project-position">{{ project.position }}</p>
         </a>
-        {% endif %}
     </li>
     {% endfor %}
 </ul>

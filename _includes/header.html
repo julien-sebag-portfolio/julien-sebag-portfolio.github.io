@@ -1,5 +1,5 @@
 <header class="header {% if page.header_black == true %}header-black{% endif %}">
-    <a href="{% if site.lang == 'fr' %}/fr/{% else %}/{% endif %}" class="logo">Julien Sebag <span>UX / UI / Web Designer</span></a>
+    <a href="/" class="logo">Julien Sebag <span>UX / UI / Web Designer</span></a>
 
     <div class="burger" onclick="openMenu(this)">
         <span></span>
@@ -20,19 +20,8 @@
             <div class="modal">{% include contact.html %}</div>
         </li>
         {% else %}
-        {% if site.lang == "fr" %}
-        <li><a href="/fr{{ item.url }}" class="links">{{ item.name }}</a></li>
-        {% else %}
         <li><a href="{{ item.url }}" class="links">{{ item.name }}</a></li>
         {% endif %}
-        {% endif %}
         {% endfor %}
-        <li>
-            {% if site.lang == "en" %}
-            <a href="/fr/" class="links">FR</a>
-            {% else %}
-            <a href="/" class="links">EN</a>
-            {% endif %}
-        </li>
     </ul>
 </header>

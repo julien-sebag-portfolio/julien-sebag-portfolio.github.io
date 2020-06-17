@@ -9,4 +9,4 @@ img: portfolio-2017.jpg
 alt_img: Placeholder Portfolio 2017
 ---
 
-{% tf _templates/portfolio-2017.md %}
+Portfolio website done in 2017

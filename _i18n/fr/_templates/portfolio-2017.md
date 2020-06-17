@@ -1,1 +1,0 @@
-Ancien portfolio fait en 2017

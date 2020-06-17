@@ -3,12 +3,12 @@
         <div class="img-container bg-stripes-{{ include.bg }} bg-{{ include.bg_color }} fade {% if include.side == 'right' %}fade-right{% endif %}">
             {% if include.website %}
             <a href="{{ include.website }}" target="_blank">
-                <img src="/assets/images/{{ include.img }}" alt="{{ include.img | remove: '.png' | remove: '.jpg' | remove: '.svg' | replace: '-', ' ' | replace: '_', ' ' | capitalize }}" class="bg-website" />
+                <img src="/assets/images/{{ include.img }}" alt="{{ include.alt_img }}" class="bg-website" />
             </a>
             {% else %}
             <img
                 src="/assets/images/{{ include.img }}"
-                alt="{{ include.img | remove: '.png' | remove: '.jpg' | remove: '.svg' | replace: '-', ' ' | replace: '_', ' ' | capitalize }}"
+                alt="{{ include.alt_img }}"
                 onclick="openModal(this)"
                 class="{% if include.bg_img == true %}background-white{% endif %}"
             />
@@ -25,15 +25,15 @@
             {% if include.video %}
             <iframe src="{{ include.video }}" frameborder="0" allowfullscreen></iframe>
             {% else %}
-            <img src="/assets/images/{{ include.img }}" alt="{{ include.img | remove: '.png' | remove: '.jpg' | remove: '.svg' | replace: '-', ' ' | replace: '_', ' ' | capitalize }}">
+            <img src="/assets/images/{{ include.img }}" alt="{{ include.alt_img }}">
             {% endif %}
         </div>
         {% endif %}
 
         {% if include.website %}
-        <small class="fade {% if include.side == 'right' %}fade-right{% endif %}">{% t click_visit %}</small>
+        <small class="fade {% if include.side == 'right' %}fade-right{% endif %}">Click on image to visit</small>
         {% else %}
-        <small class="fade {% if include.side == 'right' %}fade-right{% endif %}">{% t click_view %}</small>
+        <small class="fade {% if include.side == 'right' %}fade-right{% endif %}">Click on image to view</small>
         {% endif %}
     </div>
 

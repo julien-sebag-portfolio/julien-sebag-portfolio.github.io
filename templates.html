@@ -1,11 +1,11 @@
 ---
 layout: projects
 title: Templates
-desc: descriptions.templates
+desc: Responsive HTML and Jekyll templates to download for free
 header_black: false
 cover: cover-templates.jpg
-subtitle: subtitles.templates
-position: positions.templates
+subtitle: Personal projects
+position: Designer & Developer
 skills:
  - HTML
  - SASS
@@ -16,7 +16,7 @@ skills:
  - Jekyll
 ---
 
-<p>{% t templates.intro %}</p>
+<p>Responsive HTML and Jekyll templates to download for free. All of these templates have HTML, SASS, SCSS, Less, CSS and JS files included.</p>
 
 {% assign templates = site.templates | sort: "order" %}
 {% for template in templates %}
@@ -24,11 +24,11 @@ skills:
     <div class="col revealLeft">
         <div class="img-container bg-stripes-{{ template.bg }} bg-{{ template.bg_color }} revealLeft">
             <a href="{{ template.link }}" target="_blank">
-                <img src="/assets/images/{{ template.img }}" alt="{{ template.img | remove: '.png' | remove: '.jpg' | remove: '.svg' | replace: '-', ' ' | replace: '_', ' ' | capitalize }}" class="bg-website" />
+                <img src="/assets/images/{{ template.img }}" alt="{{ template.alt_img }}" class="bg-website" />
             </a>
         </div>
 
-        <small class="revealLeft">{% t templates.click_visit %}</small>
+        <small class="revealLeft">Click on image to visit</small>
     </div>
 
     <div class="col revealLeft">
