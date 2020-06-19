@@ -11,12 +11,12 @@
         {% for item in site.data.nav %}
         {% if item.url == "about" %}
         <li>
-            <a class="links" href="#" onclick="openNav(this)">{{ item.name }}</a>
+            <p class="links" onclick="openNav(this)">{{ item.name }}</p>
             <div class="modal">{% include about.html %}</div>
         </li>
         {% elsif item.url == "contact" %}
         <li>
-            <a class="links" href="#" onclick="openNav(this)">{{ item.name }}</a>
+            <p class="links" onclick="openNav(this)">{{ item.name }}</p>
             <div class="modal">{% include contact.html %}</div>
         </li>
         {% else %}
