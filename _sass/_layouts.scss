@@ -1,0 +1,11 @@
+/*============================================================= Layouts ============================================================= */
+
+.container {
+    padding: 60px 5%;
+    width: 100%;
+    min-height: 90vh;
+
+    @media (max-width: $breakpoint-mobile) {
+        padding-top: 100px;
+    }
+}

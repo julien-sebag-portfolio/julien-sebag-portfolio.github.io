@@ -1,0 +1,173 @@
+/*============================================================= Mixins ============================================================= */
+
+@mixin flexbox($align, $justify, $wrap) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: $align;
+    -ms-flex-align: $align;
+    align-items: $align;
+    -webkit-box-pack: $justify;
+    -ms-flex-pack: $justify;
+    justify-content: $justify;
+    -ms-flex-wrap: $wrap;
+    flex-wrap: $wrap;
+}
+
+@mixin flex-direction($direction) {
+    @if $direction == column {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+    }
+
+    @if $direction == column-reverse {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+    } @else {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+    }
+
+    -ms-flex-direction: $direction;
+    flex-direction: $direction;
+}
+
+@mixin transition($property, $duration, $function) {
+    -webkit-transition: $property $duration $function;
+    -moz-transition: $property $duration $function;
+    -ms-transition: $property $duration $function;
+    -o-transition: $property $duration $function;
+    transition: $property $duration $function;
+}
+
+@mixin transition-timing($method) {
+    -webkit-transition-timing-function: $method;
+    -moz-transition-timing-function: $method;
+    -o-transition-timing-function: $method;
+    transition-timing-function: $method;
+}
+
+@mixin transform($method) {
+    -moz-transform: $method;
+    -webkit-transform: $method;
+    -o-transform: $method;
+    -ms-transform: $method;
+    transform: $method;
+}
+
+@mixin transform-origin($method) {
+    -moz-transform-origin: $method;
+    -webkit-transform-origin: $method;
+    -o-transform-origin: $method;
+    -ms-transform-origin: $method;
+    transform-origin: $method;
+}
+
+@mixin border-radius($value) {
+    -webkit-border-radius: $value;
+    border-radius: $value;
+}
+
+@mixin box-sizing($property) {
+    -moz-box-sizing: $property;
+    -webkit-box-sizing: $property;
+    box-sizing: $property;
+}
+
+@mixin icon($weight, $unicode) {
+    font-family: "Font Awesome 5 Free";
+    font-weight: $weight;
+    content: $unicode;
+}
+
+@mixin transition-delay($delay) {
+    -webkit-transition-delay: $delay;
+    -moz-transition-delay: $delay;
+    -o-transition-delay: $delay;
+    transition-delay: $delay;
+}
+
+@mixin font-size($font-size) {
+    font-size: $font-size;
+    line-height: $font-size * 1.4;
+}
+
+/*============================================================= Animations ============================================================= */
+
+/*====================================== Mixins ====================================== */
+
+@mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+
+    @-moz-keyframes #{$name} {
+        @content;
+    }
+
+    @-ms-keyframes #{$name} {
+        @content;
+    }
+
+    @keyframes #{$name} {
+        @content;
+    }
+}
+
+@include keyframes(cover) {
+    0% {
+        width: 100%;
+    }
+
+    10% {
+        width: 95%;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+@mixin fade-start {
+    @include transform(translateX(-10px));
+    opacity: 0;
+    @include transition(all, 0.2s, ease);
+}
+
+@mixin fade-end {
+    @include transform(translateX(0));
+    opacity: 1;
+}
+
+@mixin fade-delay($duration) {
+    @include fade-start;
+    @include transition-delay($duration);
+}
+
+/*=============================================== Constants =============================================== */
+
+%paMar {
+    padding: 0;
+    margin: 0;
+}
+
+%ulNone {
+    list-style: none;
+    @extend %paMar;
+}
+
+%flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+%bgCenter {
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+/*=============================================== Queries =============================================== */
+
+$breakpoint-tablet: 1024px;
+$breakpoint-mobile: 600px;

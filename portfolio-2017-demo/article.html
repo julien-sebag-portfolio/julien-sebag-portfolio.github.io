@@ -1,0 +1,343 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Demo | Julien Sebag</title>
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta property="og:title" content="Demo" />
+        <meta property="og:type" content="" />
+        <meta property="og:url" content="http://localhost:4000/demo/" />
+        <meta property="og:image" content="assets/images/" />
+        <meta property="og:site_name" content="Julien Sebag" />
+        <meta property="og:locale" content="en_GB" />
+        <!-- Website Language (see here https://stackoverflow.com/questions/3191664/list-of-all-locales-and-their-short-codes) -->
+        <link href="assets/images/" rel="shortcut icon">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/font-awesome-all.min.css">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Oxygen:wght@400;700&display=swap"
+            rel="stylesheet">
+
+        <!-- JS -->
+        <script src="assets/js/jquery-2.1.4.min.js"></script>
+        <script src="assets/js/plax.js"></script>
+        <script src="assets/js/typed.js"></script>
+        <script src="assets/js/js-head.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="burger" onclick="openNav(this)">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        
+            <nav onclick="openNav(this)">
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+        
+                <ul class="social">
+                    <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-medium-m"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-behance"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-dribbble"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fas fa-file-alt"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="cover">
+            <picture>
+                <source media="(max-width: 600px)" srcset="assets/images/s-cover-fajny-css.jpg">
+                <source media="(max-width: 1024px)" srcset="assets/images/m-cover-fajny-css.jpg">
+                <img src="assets/images/l-cover-fajny-css.jpg" alt="" class="fade">
+            </picture>
+
+            <div class="content">
+                <h1 class="fade">Demo</h1>
+                <h2 class="fade">Type company</h2>
+                <h2 class="fade">Position</h2>
+                <h2 class="fade">City</h2>
+            </div>
+        </div>
+
+        <main class="container">
+            <div class="content-container container-projects">
+                <h3 class="fade" id="heading-3">Heading 3</h3>
+                <h4 class="fade" id="heading-4">Heading 4</h4>
+                <h5 class="fade" id="heading-5">Heading 5</h5>
+                <h6 class="fade" id="heading-6">Heading 6</h6>
+                <p class="fade">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim quam at mauris
+                    viverra, sit amet vulputate diam rutrum. Donec malesuada risus ante. Sed lacinia, ante non varius
+                    lobortis, odio ipsum maximus nunc, vitae tincidunt felis quam bibendum sem. Quisque condimentum a
+                    quam id mattis. Integer blandit, lectus ut cursus consectetur, augue massa pretium lacus, at
+                    efficitur purus orci ut nulla. Nunc elementum ultricies magna quis facilisis. Duis consequat, elit
+                    nec dictum faucibus, massa elit auctor dolor, sit amet consequat odio libero a ipsum. Curabitur
+                    pretium pellentesque porta. Ut sit amet mattis leo. Nunc quam neque, congue nec condimentum in,
+                    auctor non turpis. Duis id risus dolor. Aliquam volutpat erat in augue pellentesque imperdiet.</p>
+                <p class="fade"><a href="#">Link</a></p>
+                <p class="fade"><strong>Bold</strong></p>
+                <p class="fade"><em>Italic</em></p>
+                <p class="fade"><strong><em>Bold italic</em></strong></p>
+                <hr class="fade" />
+                <small class="fade">Click on images to view.</small>
+            </div>
+        </main>
+
+        <ul class="img-project">
+            <li class="col-1">
+                <div class="img-container">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="assets/images/s-appli-galleries.png">
+                        <source media="(max-width: 1024px)" srcset="assets/images/m-appli-galleries.png">
+                        <img src="assets/images/l-appli-galleries.png" alt="Alt" class="fade">
+                    </picture>
+
+                    <p onclick="openModal(this)">Text</p>
+                </div>
+
+                <div class="modal" onclick="closeModal(this)">
+                    <i class="fas fa-times"></i>
+
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="assets/images/s-appli-galleries.png">
+                        <source media="(max-width: 1024px)" srcset="assets/images/m-appli-galleries.png">
+                        <img src="assets/images/l-appli-galleries.png" alt="Alt">
+                    </picture>
+                </div>
+            </li>
+
+            <li class="col-2">
+                <div class="img-container">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="assets/images/s-proto-papier-wellness.png">
+                        <source media="(max-width: 1024px)" srcset="assets/images/m-proto-papier-wellness.png">
+                        <img src="assets/images/l-proto-papier-wellness.png" alt="Alt" class="fade">
+                    </picture>
+
+                    <p onclick="openModal(this)">Text</p>
+                </div>
+
+                <div class="modal" onclick="closeModal(this)">
+                    <i class="fas fa-times"></i>
+
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="assets/images/s-proto-papier-wellness.png">
+                        <source media="(max-width: 1024px)" srcset="assets/images/m-proto-papier-wellness.png">
+                        <img src="assets/images/l-proto-papier-wellness.png" alt="Alt">
+                    </picture>
+                </div>
+            </li>
+
+            <li class="col-2">
+                <div class="img-container">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="assets/images/s-proto-papier-wellness.png">
+                        <source media="(max-width: 1024px)" srcset="assets/images/m-proto-papier-wellness.png">
+                        <img src="assets/images/l-proto-papier-wellness.png" alt="Alt" class="fade">
+                    </picture>
+
+                    <p onclick="openModal(this)">Text</p>
+                </div>
+
+                <div class="modal" onclick="closeModal(this)">
+                    <i class="fas fa-times"></i>
+
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="assets/images/s-proto-papier-wellness.png">
+                        <source media="(max-width: 1024px)" srcset="assets/images/m-proto-papier-wellness.png">
+                        <img src="assets/images/l-proto-papier-wellness.png" alt="Alt">
+                    </picture>
+                </div>
+            </li>
+
+            <li class="col-3">
+                <div class="img-container">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="assets/images/s-poster-lab.png">
+                        <source media="(max-width: 1024px)" srcset="assets/images/m-poster-lab.png">
+                        <img src="assets/images/l-poster-lab.png" alt="Alt" class="fade">
+                    </picture>
+
+                    <p onclick="openModal(this)">Text</p>
+                </div>
+
+                <div class="modal" onclick="closeModal(this)">
+                    <i class="fas fa-times"></i>
+
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="assets/images/s-poster-lab.png">
+                        <source media="(max-width: 1024px)" srcset="assets/images/m-poster-lab.png">
+                        <img src="assets/images/l-poster-lab.png" alt="Alt">
+                    </picture>
+                </div>
+            </li>
+
+            <li class="col-3">
+                <div class="img-container">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="assets/images/s-poster-lab.png">
+                        <source media="(max-width: 1024px)" srcset="assets/images/m-poster-lab.png">
+                        <img src="assets/images/l-poster-lab.png" alt="Alt" class="fade">
+                    </picture>
+
+                    <p onclick="openModal(this)">Text</p>
+                </div>
+
+                <div class="modal" onclick="closeModal(this)">
+                    <i class="fas fa-times"></i>
+                    <iframe src="#" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </li>
+
+            <li class="col-3">
+                <div class="img-container">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="assets/images/s-poster-lab.png">
+                        <source media="(max-width: 1024px)" srcset="assets/images/m-poster-lab.png">
+                        <img src="assets/images/l-poster-lab.png" alt="Alt" class="fade">
+                    </picture>
+
+                    <p onclick="openModal(this)">Text</p>
+                </div>
+
+                <div class="modal" onclick="closeModal(this)">
+                    <i class="fas fa-times"></i>
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="assets/images/s-poster-lab.png">
+                        <source media="(max-width: 1024px)" srcset="assets/images/m-poster-lab.png">
+                        <img src="assets/images/l-poster-lab.png" alt="Alt">
+                    </picture>
+                </div>
+            </li>
+
+            <li class="col-4">
+                <div class="img-container">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="assets/images/s-flyers-lab.png">
+                        <source media="(max-width: 1024px)" srcset="assets/images/m-flyers-lab.png">
+                        <img src="assets/images/l-flyers-lab.png" alt="Alt" class="fade">
+                    </picture>
+
+                    <p onclick="openModal(this)">Text</p>
+                </div>
+
+                <div class="modal" onclick="closeModal(this)">
+                    <i class="fas fa-times"></i>
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="assets/images/s-flyers-lab.png">
+                        <source media="(max-width: 1024px)" srcset="assets/images/m-flyers-lab.png">
+                        <img src="assets/images/l-flyers-lab.png" alt="Alt">
+                    </picture>
+                </div>
+            </li>
+
+            <li class="col-4">
+                <div class="img-container">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="assets/images/s-flyers-lab.png">
+                        <source media="(max-width: 1024px)" srcset="assets/images/m-flyers-lab.png">
+                        <img src="assets/images/l-flyers-lab.png" alt="Alt" class="fade">
+                    </picture>
+
+                    <p onclick="openModal(this)">Text</p>
+                </div>
+
+                <div class="modal" onclick="closeModal(this)">
+                    <i class="fas fa-times"></i>
+
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="assets/images/s-flyers-lab.png">
+                        <source media="(max-width: 1024px)" srcset="assets/images/m-flyers-lab.png">
+                        <img src="assets/images/l-flyers-lab.png" alt="Alt">
+                    </picture>
+                </div>
+            </li>
+
+            <li class="col-4">
+                <div class="img-container">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="assets/images/s-flyers-lab.png">
+                        <source media="(max-width: 1024px)" srcset="assets/images/m-flyers-lab.png">
+                        <img src="assets/images/l-flyers-lab.png" alt="Alt" class="fade">
+                    </picture>
+
+                    <p onclick="openModal(this)">Text</p>
+                </div>
+
+                <div class="modal" onclick="closeModal(this)">
+                    <i class="fas fa-times"></i>
+
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="assets/images/s-flyers-lab.png">
+                        <source media="(max-width: 1024px)" srcset="assets/images/m-flyers-lab.png">
+                        <img src="assets/images/l-flyers-lab.png" alt="Alt">
+                    </picture>
+                </div>
+            </li>
+
+            <li class="col-4">
+                <div class="img-container">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="assets/images/s-flyers-lab.png">
+                        <source media="(max-width: 1024px)" srcset="assets/images/m-flyers-lab.png">
+                        <img src="assets/images/l-flyers-lab.png" alt="Alt" class="fade">
+                    </picture>
+
+                    <p onclick="openModal(this)">Text</p>
+                </div>
+
+                <div class="modal" onclick="closeModal(this)">
+                    <i class="fas fa-times"></i>
+
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="assets/images/s-flyers-lab.png">
+                        <source media="(max-width: 1024px)" srcset="assets/images/m-flyers-lab.png">
+                        <img src="assets/images/l-flyers-lab.png" alt="Alt">
+                    </picture>
+                </div>
+            </li>
+        </ul>
+
+        <a href="#" class="btn-next">Next Project</a>
+
+        <footer>
+            <ul class="social">
+                <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-medium-m"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-behance"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-dribbble"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fas fa-file-alt"></i></a></li>
+            </ul>
+
+            <p>&copy; Julien Sebag | 2017</p>
+        </footer>
+
+        <div class="download">
+            <p>Download this template:</p>
+            <div class="btn-download">
+                <i onclick="openDownload(this)"><img src="assets/images/download.svg" alt=""></i>
+                <a href="https://github.com/JulSeb42/portfolio-2017-html" target="_blank"><img src="assets/images/logo-html-dl.svg" alt=""></a>
+                <a href="https://github.com/JulSeb42/portfolio-2017-jekyll" target="_blank"><img src="assets/images/logo-jekyll-dl.svg" alt=""></a>
+            </div>
+
+            <a href="https://www.julien-sebag.fr/templates/" class="back-portfolio">Back to portfolio</a>
+        </div>
+        <script src="assets/js/js.js"></script>
+    </body>
+</html>

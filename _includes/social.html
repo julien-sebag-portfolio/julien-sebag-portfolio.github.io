@@ -1,0 +1,9 @@
+<ul class="social {% if include.delay == true %}delay-3{% endif %}">
+    <li><a href="mailto:{{site.email}}">Email</a></li>
+    {% for item in site.data.social %}
+    <li><a href="{{ item.url }}" target="_blank">{{ item.name }}</a></li>
+    {% endfor %}
+    {% if include.delay == false %}
+    <li><a href="/assets/images/{{site.cv}}" target="_blank">CV</a></li>
+    {% endif %}
+</ul>
