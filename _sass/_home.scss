@@ -121,6 +121,10 @@
                 width: calc(70vw - #{$padding} * 2);
                 height: calc(70vw - #{$padding} * 2);
             }
+
+            &.fade-delay-4, &.fade-delay-5, &.fade-delay-6 {
+                @include transition-delay(0s !important);
+            }
         }
 
         @media (hover: none) and (pointer: coarse) {
