@@ -33,6 +33,7 @@
      </head>
 
      <body {% if page.title == "Home" %}id="home"{% endif %}>
+          {% include loader.html %}
           {% include header.html %}
           {% if page.layout != "projects" %}
           <main class="container">

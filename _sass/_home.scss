@@ -13,6 +13,30 @@
         padding: $padding;
         position: relative;
 
+        &.fade-delay-1 {
+            @include transition-delay(2.5s);
+        }
+
+        &.fade-delay-2 {
+            @include transition-delay(2.7s);
+        }
+
+        &.fade-delay-3 {
+            @include transition-delay(2.9s);
+        }
+
+        &.fade-delay-4 {
+            @include transition-delay(3.1s);
+        }
+
+        &.fade-delay-5 {
+            @include transition-delay(3.3s);
+        }
+
+        &.fade-delay-6 {
+            @include transition-delay(3.5s);
+        }
+
         .bg-stripes-1,
         .bg-stripes-2,
         .bg-stripes-3,

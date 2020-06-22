@@ -114,6 +114,85 @@
     }
 }
 
+/*====================================== Animation loader ======================================*/
+
+@include keyframes(loader) {
+    0% {
+        opacity: 1;
+        width: 100%;
+        height: 100vh;
+    }
+
+    80% {
+        opacity: 1;
+        width: 100%;
+        height: 100vh;
+    }
+
+    99% {
+        opacity: 0;
+        width: 100%;
+        height: 100vh;
+    }
+
+    100% {
+        width: 0;
+        height: 0;
+    }
+}
+
+@include keyframes(swing) {
+    50% {
+        transform: rotate(-3deg);
+    }
+}
+
+@include keyframes(steamLarge) {
+    0% {
+        stroke-dashoffset: 13;
+        opacity: 0.6;
+    }
+
+    100% {
+        stroke-dashoffset: 39;
+        opacity: 0;
+    }
+}
+
+@include keyframes(steamSmall) {
+    10% {
+        stroke-dashoffset: 9;
+        opacity: 0.6;
+    }
+
+    80% {
+        stroke-dashoffset: 27;
+        opacity: 0;
+    }
+
+    100% {
+        stroke-dashoffset: 27;
+        opacity: 0;
+    }
+}
+
+@include keyframes(block) {
+    0% {
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    99% {
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    100% {
+        height: auto;
+        overflow: visible;
+    }
+}
+
 @include keyframes(cover) {
     0% {
         width: 100%;

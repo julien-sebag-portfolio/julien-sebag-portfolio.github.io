@@ -70,6 +70,22 @@
             @media (max-width: $breakpoint-mobile) {
                 margin-bottom: 10px;
             }
+
+            &.fade-delay-1.fade-long {
+                @include transition-delay(2.5s);
+            }
+
+            &.fade-delay-2.fade-long {
+                @include transition-delay(2.7s);
+            }
+
+            &.fade-delay-3.fade-long {
+                @include transition-delay(2.9s);
+            }
+
+            &.fade-delay-4.fade-long {
+                @include transition-delay(3.1s);
+            }
         }
 
         @media (hover: none) and (pointer: coarse) {
@@ -334,9 +350,9 @@
 
         li {
             @include flexbox(flex-start, flex-start, nowrap);
-			padding-left: 5px;
-			
-			&:before {
+            padding-left: 5px;
+
+            &:before {
                 @include icon(900, "");
                 @include font-size(10px);
                 margin-right: 5px;
