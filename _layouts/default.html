@@ -17,6 +17,13 @@
           <meta content="width=device-width, initial-scale=1" name="viewport">
           <meta name="description" content="{{ page.desc }}">
           <meta name="author" content="Julien Sebag">
+          {% if page.url =="/" %}
+          <meta name="keywords" content="{% for keyword in site.keywords %}{{ keyword }}{% if forloop.last == false %}, {% endif %}{% endfor %}">
+          {% else %}
+          <meta name="keywords"
+               content="{% for keyword in site.keywords %}{{ keyword }}, {% endfor %}{% for skill in page.skills %}{{ skill }}{% if forloop.last == false %}, {% endif %}{% endfor %}"
+          >
+          {% endif %}
           <meta property="og:title" content="{{ page.title }}" />
           <meta property="og:type" content="designer_portfolio" />
           <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
@@ -28,6 +35,8 @@
           <link href="/assets/images/{{ site.favicon }}" rel="shortcut icon">
 
           <!-- CSS -->
+          <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@800&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+               rel="stylesheet">
           <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
           <link rel="stylesheet" href="/assets/css/style.css">
      </head>

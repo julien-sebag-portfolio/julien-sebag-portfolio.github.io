@@ -2,28 +2,33 @@
 
 /*====================================== Import ====================================== */
 
-@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 /*====================================== Mixins ====================================== */
 
+@mixin titles() {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 800;
+}
+
 @mixin body {
-    font-family: "Jost", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
 
 @mixin body-italic {
-    font-family: "Jost", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-style: italic;
 }
 
 @mixin body-bold {
-    font-family: "Jost", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
 }
 
 @mixin body-bold-italic {
-    font-family: "Jost", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-style: italic;
 }
@@ -33,7 +38,7 @@ $font-size: 16px;
 /*====================================== Styles ====================================== */
 
 h1 {
-    @include body-bold;
+    @include titles();
     @include font-size(5vw);
 
     @media (max-width: $breakpoint-mobile) {
@@ -42,7 +47,7 @@ h1 {
 }
 
 h2 {
-    @include body-bold;
+    @include titles();
     @include font-size(3vw);
 
     @media (max-width: $breakpoint-mobile) {
@@ -56,18 +61,18 @@ h3 {
 }
 
 h4 {
-    @include body-bold-italic;
+    @include titles();
     @include font-size(24px);
 }
 
 h5 {
     @include body-bold;
-    @include font-size(18px);
+    @include font-size(20px);
 }
 
 h6 {
-    @include body-bold;
-    @include font-size(16px);
+    @include titles();
+    @include font-size(20px);
 }
 
 p,

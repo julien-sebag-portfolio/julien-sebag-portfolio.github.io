@@ -7,6 +7,13 @@ cv: resume-juliensebag.pdf
 picture: picture-julien-sebag.jpg
 favicon: favicon.png
 cover_og: cover-og.png
+keywords:
+  - Designer
+  - Portfolio
+  - Warsaw
+  - UX Design
+  - UI Design
+  - Web Design
 
 markdown: kramdown
 

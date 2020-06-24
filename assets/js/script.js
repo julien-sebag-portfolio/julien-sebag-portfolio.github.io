@@ -48,14 +48,14 @@ var hasBlocked = false;
 window.addEventListener("scroll", function () {
     scrollPosition = window.scrollY;
 
-	if (scrollPosition >= 1) {
-		console.log("scrolled");
+    if (scrollPosition >= 1) {
+        console.log("scrolled");
         logoContainer.classList.add("header-scroll");
         cover.classList.add("cover-scroll");
         fade1.classList.remove("fade-long");
         fade2.classList.remove("fade-long");
         fade3.classList.remove("fade-long");
-		fade4.classList.remove("fade-long");
+        fade4.classList.remove("fade-long");
         if (!hasBlocked) {
             hasBlocked = true;
             document.body.classList.add("stop-scrolling");

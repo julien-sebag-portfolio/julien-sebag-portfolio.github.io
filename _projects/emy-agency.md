@@ -40,6 +40,7 @@ Furthermore, the agency acquired several generic domain names, in the purpose to
 
 {%
     include col-project.html
+    title="Emy Agency website"
     text="Redesign and development of the agency website"
     img="emy-agency.png"
     website_ext=true
@@ -51,6 +52,7 @@ Furthermore, the agency acquired several generic domain names, in the purpose to
 
 {%
     include col-project.html
+    title="Mariage.be"
     text="Wireframing in accordance with the different types of users defined by the agency, mockups (Photoshop) and development of the website Mariage.be, in team with a developer working on the back office"
     img="mariage.png"
     website_ext=true
@@ -62,6 +64,7 @@ Furthermore, the agency acquired several generic domain names, in the purpose to
 
 {%
     include col-project.html
+    title="Salles.be"
     text="Redesign and front end development of the website Salles.be"
     img="salles.png"
     website_ext=true
@@ -73,6 +76,7 @@ Furthermore, the agency acquired several generic domain names, in the purpose to
 
 {%
     include col-project.html
+    title="SeniorLife.be"
     text="Design and front end development of the website SeniorLife.be"
     img="senior-life.png"
     website_ext=true
@@ -84,6 +88,7 @@ Furthermore, the agency acquired several generic domain names, in the purpose to
 
 {%
     include col-project.html
+    title="GuideAnniversaire.be"
     text="Design and front end development of the website GuideAnniversaire.be"
     img="guide-anniversaire.png"
     website_ext=true
