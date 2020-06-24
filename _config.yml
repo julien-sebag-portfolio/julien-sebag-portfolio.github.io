@@ -15,6 +15,20 @@ keywords:
   - UI Design
   - Web Design
 
+text_about: |-
+  {:.delay-1}
+  Hi I'm Julien, a French UX / UI / Web Designer based in Warsaw, Poland.
+
+  {:.delay-2}
+  Currently working as a Product Designer at Nielsen, I create cool interfaces, code websites, and usually drink tea.
+
+text_contact: |-
+  {:.delay-1}
+  You like what you see and want to work with me, have a coffee or just have a chat?
+
+  {:.delay-2}
+  At the moment, I’m based in Warsaw, Poland. You can contact me anytime via any social network or by email!
+
 markdown: kramdown
 
 collections:

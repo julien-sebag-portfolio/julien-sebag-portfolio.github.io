@@ -14,9 +14,11 @@ skills:
  - CSS
  - JS
  - Jekyll
+
+intro: Responsive HTML and Jekyll templates to download for free. All of these templates have HTML, SASS, SCSS, Less, CSS and JS files included.
 ---
 
-<p>Responsive HTML and Jekyll templates to download for free. All of these templates have HTML, SASS, SCSS, Less, CSS and JS files included.</p>
+<p>{{ page.intro }}</p>
 
 {% assign templates = site.templates | sort: "order" %}
 {% for template in templates %}
