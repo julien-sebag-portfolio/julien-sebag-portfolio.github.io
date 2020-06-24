@@ -26,7 +26,12 @@ During my MSc Creative Technology at Middlesex University, I had to work on seve
 
 {%
     include col-project.html
-    text="Smart object for the kitchen, aiming at disabled and elderly people. The aim of this object is to help them in their everyday life"
+    title="Smart object"
+    text="
+Object created on Arduino for the software, and our hands for the hardware.
+
+Smart object for the kitchen, aiming at disabled and elderly people. The aim of this object is to help them in their everyday life.
+    "
     img="poster-smart-cooker.png"
     website_ext=false
     video="https://www.youtube.com/embed/UPfj5DfxjXs"
@@ -40,7 +45,11 @@ During my MSc Creative Technology at Middlesex University, I had to work on seve
 
 {%
     include col-project.html
-    text="Augmented Reality application, developed on Unity and using the library Vuforia for AR. The idea of this app is that children can collect items with an NFC chip, which will react with the app to show virtual animals on the screen of a smartphone or a tablet"
+    title="Augmented Reality"
+    text="
+Augmented Reality application, developed on Unity and using the library Vuforia for AR.
+
+The idea of this app is that children can collect items with an NFC chip, which will react with the app to show virtual animals on the screen of a smartphone or a tablet"
     img="poster-ar-zoo.png"
     website_ext=false
     video="https://www.youtube.com/embed/NDFs6mpai_k"

@@ -31,6 +31,7 @@ The restaurant L’Amuse Bouche, specialized in "rapid gastronomy", needs to inc
 
 {%
     include col-project.html
+    title="Web Design"
     text="Design and development of the restaurant's website"
     img="lab.png"
     website="http://www.l-ab.fr/"
@@ -42,6 +43,7 @@ The restaurant L’Amuse Bouche, specialized in "rapid gastronomy", needs to inc
 
 {%
     include col-project.html
+    title="Stickers"
     text="Creation of a sticker's board to show prices in the restaurant"
     img="sticker_bar_mdld.png"
     website_ext=false
@@ -52,6 +54,7 @@ The restaurant L’Amuse Bouche, specialized in "rapid gastronomy", needs to inc
 
 {%
     include col-project.html
+    title="Business Cards"
     text="Creation of business cards"
     img="carte_visite_lab.png"
     website_ext=false
@@ -63,6 +66,7 @@ The restaurant L’Amuse Bouche, specialized in "rapid gastronomy", needs to inc
 
 {%
     include col-project.html
+    title="Posters"
     text="Creation of posters to show in the restaurant and on catering sites"
     img="poster-lab.png"
     website_ext=false
@@ -73,6 +77,7 @@ The restaurant L’Amuse Bouche, specialized in "rapid gastronomy", needs to inc
 
 {%
     include col-project.html
+    title="Stickers"
     text="Creation of a stickers board to show on catering sites"
     img="sticker-board-lab.png"
     website_ext=false
@@ -83,6 +88,7 @@ The restaurant L’Amuse Bouche, specialized in "rapid gastronomy", needs to inc
 
 {%
     include col-project.html
+    title="Kakemono"
     text="Creation of a kakemono to show on catering sites"
     img="kakemono-lab.png"
     website_ext=false
@@ -93,6 +99,7 @@ The restaurant L’Amuse Bouche, specialized in "rapid gastronomy", needs to inc
 
 {%
     include col-project.html
+    title="Flyers"
     text="Creation of flyers to advertise the restaurant"
     img="flyers-lab.png"
     website_ext=false

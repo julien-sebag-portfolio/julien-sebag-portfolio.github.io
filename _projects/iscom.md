@@ -37,6 +37,7 @@ Creation of a strategic recommendation for the client L’Amuse Bouche, to enter
 
 {%
     include col-project.html
+    title="Web Design"
     text="Design and development of the agency's website"
     img="maquette-tetrys.png"
     website_ext=true
@@ -48,6 +49,7 @@ Creation of a strategic recommendation for the client L’Amuse Bouche, to enter
 
 {%
     include col-project.html
+    title="Logo"
     text="Creation of the logo of the agency"
     img="logo_tetrys.png"
     website_ext=false
@@ -59,6 +61,7 @@ Creation of a strategic recommendation for the client L’Amuse Bouche, to enter
 
 {%
     include col-project.html
+    title="Print Design"
     text="Creation of sales brochures for the agency"
     img="plaquette_tetrys.png"
     website_ext=false
@@ -73,6 +76,7 @@ Creation of a strategic recommendation for the client L’Amuse Bouche, to enter
 
 {%
     include col-project.html
+    title="UX Design"
     text="Establishment of a new application, merging both apps Galeries Lafayette and Galeries Lafayette Haussmann, by keeping the brands universe by harmonizing them, in order to simplify the user experience and improve usability"
     img="appli-galleries.png"
     website_ext=false
@@ -87,6 +91,7 @@ Creation of a strategic recommendation for the client L’Amuse Bouche, to enter
 
 {%
     include col-project.html
+    title="Video"
     text="Video about the copywriter position for a challenge"
     img="poster-cr.png"
     website_ext=false
@@ -98,6 +103,7 @@ Creation of a strategic recommendation for the client L’Amuse Bouche, to enter
 
 {%
     include col-project.html
+    title="Video"
     text="Video in motion design about Nintendo"
     img="poster-nintendo.png"
     website_ext=false
@@ -112,6 +118,7 @@ Creation of a strategic recommendation for the client L’Amuse Bouche, to enter
 
 {%
     include col-project.html
+    title="Book covers"
     text="Covers of the five books \"The Hitchhiker’s Guide to the Galaxy\" by Douglas Adams"
     img="covers-h2g2.png"
     website_ext=false
@@ -126,6 +133,7 @@ Creation of a strategic recommendation for the client L’Amuse Bouche, to enter
 
 {%
     include col-project.html
+    title="Infographic"
     text="Infographic about SEO"
     img="info_referencement.png"
     website_ext=false
@@ -136,6 +144,7 @@ Creation of a strategic recommendation for the client L’Amuse Bouche, to enter
 
 {%
     include col-project.html
+    title="Infographic"
     text="Infographic about food wasting"
     img="infographie_gaspillage.png"
     website_ext=false
@@ -149,6 +158,7 @@ Creation of a strategic recommendation for the client L’Amuse Bouche, to enter
 
 {%
     include col-project.html
+    title="Advertising"
     text="Homework about advertising with slogan, with the subject Viagra"
     img="viagra.png"
     website_ext=false

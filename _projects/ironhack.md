@@ -46,6 +46,7 @@ The idea was to create a live feed in AR, where users will be able to react to o
 
 {%
     include col-project.html
+    title="Design"
     text="Design of the style of the app"
     img="styles-tele-loisirs.png"
     website_ext=false
@@ -56,6 +57,7 @@ The idea was to create a live feed in AR, where users will be able to react to o
 
 {%
     include col-project.html
+    title="Atomic design"
     text="Atomic Design of the app"
     img="atomic-tele-loisirs.png"
     website_ext=false
@@ -66,6 +68,7 @@ The idea was to create a live feed in AR, where users will be able to react to o
 
 {%
     include col-project.html
+    title="Mockups"
     text="Mockups of the app"
     img="screens-iphone-tele-loisirs.png"
     website_ext=false
@@ -77,6 +80,7 @@ The idea was to create a live feed in AR, where users will be able to react to o
 
 {%
     include col-project.html
+    title="IxD"
     text="Micro Interactions of the app"
     img="poster-tele-loisirs.png"
     website_ext=false
@@ -103,6 +107,7 @@ Lafayette Gourmet is a store where clients can eat in different restaurants, but
 
 {%
     include col-project.html
+    title="Atomic Design"
     text="Atomic Design of the app"
     img="atomic-design-glg.png"
     website_ext=false
@@ -113,6 +118,7 @@ Lafayette Gourmet is a store where clients can eat in different restaurants, but
 
 {%
     include col-project.html
+    title="Design"
     text="Mockups of the app"
     img="ecrans-glg.png"
     website_ext=false
@@ -124,6 +130,7 @@ Lafayette Gourmet is a store where clients can eat in different restaurants, but
 
 {%
     include col-project.html
+    title="IxD"
     text="Micro Interactions of the app"
     img="poster-ixd-glg.png"
     website_ext=false
@@ -150,6 +157,7 @@ iOS application for National Wellness Institute, which is an organisation allowi
 
 {%
     include col-project.html
+    title="Prototype"
     text="Paper prototype of the app"
     img="proto-papier-wellness.png"
     website_ext=false
@@ -160,6 +168,7 @@ iOS application for National Wellness Institute, which is an organisation allowi
 
 {%
     include col-project.html
+    title="Atomic Design"
     text="Atomic Design of the app"
     img="atomic-design-wellness.png"
     website_ext=false
@@ -170,6 +179,7 @@ iOS application for National Wellness Institute, which is an organisation allowi
 
 {%
     include col-project.html
+    title="Mockups"
     text="Mockups of the app"
     img="ecrans-wellness.png"
     website_ext=false
@@ -181,6 +191,7 @@ iOS application for National Wellness Institute, which is an organisation allowi
 
 {%
     include col-project.html
+    title="IxD"
     text="Micro Interactions of the app"
     img="poster-wellness.png"
     website_ext=false
