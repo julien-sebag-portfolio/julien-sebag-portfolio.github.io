@@ -13,3 +13,6 @@
 - url: https://github.com/JulSeb42
   icon: fab fa-github
   name: Github
+- url: https://codepen.io/julien_sebag/
+  icon: fab fa-codepen
+  name: Codepen
