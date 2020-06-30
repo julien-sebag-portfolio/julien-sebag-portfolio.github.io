@@ -9,19 +9,16 @@
     
     <ul class="nav">
         {% for item in site.data.nav %}
-        {% if item.url == "about" %}
+        <li><a href="{{ item.url }}" class="links">{{ item.name }}</a></li>
+        {% endfor %}
         <li>
-            <p class="links" onclick="openNav(this)">{{ item.name }}</p>
+            <p class="links" onclick="openNav(this)">About</p>
             <div class="modal">{% include about.html %}</div>
         </li>
-        {% elsif item.url == "contact" %}
+
         <li>
-            <p class="links" onclick="openNav(this)">{{ item.name }}</p>
+            <p class="links" onclick="openNav(this)">Contact</p>
             <div class="modal">{% include contact.html %}</div>
         </li>
-        {% else %}
-        <li><a href="{{ item.url }}" class="links">{{ item.name }}</a></li>
-        {% endif %}
-        {% endfor %}
     </ul>
 </header>

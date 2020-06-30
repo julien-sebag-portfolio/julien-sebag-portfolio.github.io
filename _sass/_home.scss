@@ -1,5 +1,10 @@
 /*============================================================= Homepage ============================================================= */
 
+#home .container {
+    min-height: 95vh;
+    @include flexbox(center, center, nowrap);
+}
+
 .list-projects {
     @extend %ulNone;
     width: 100%;
