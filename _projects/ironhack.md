@@ -4,7 +4,7 @@ desc: Projects done at Ironhack, Paris, France
 order: 4
 header_black: false
 bg_color: orange
-cover: cover-ironhack.png
+cover: cover-ironhack.jpg
 subtitle: UX / UI Design Bootcamp
 position: Student
 city: Paris
