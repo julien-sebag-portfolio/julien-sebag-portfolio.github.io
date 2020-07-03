@@ -7,6 +7,7 @@ let fade1 = document.getElementsByClassName("fade-delay-1")[0];
 let fade2 = document.getElementsByClassName("fade-delay-2")[0];
 let fade3 = document.getElementsByClassName("fade-delay-3")[0];
 let fade4 = document.getElementsByClassName("fade-delay-4")[0];
+let header = document.getElementsByClassName("header")[0];
 
 function openNav(e) {
     e.parentNode.classList.toggle("nav-open");
@@ -23,11 +24,13 @@ function closeNav(e) {
 function openModal(e) {
     e.parentNode.parentNode.classList.toggle("modal-open");
     body.classList.add("stop-scrolling");
+    header.style.display = "none";
 }
 
 function closeModal(e) {
     e.parentNode.classList.toggle("modal-open");
     body.classList.remove("stop-scrolling");
+    header.style.display = "flex";
 }
 
 function openMenu(e) {
@@ -49,7 +52,6 @@ window.addEventListener("scroll", function () {
     scrollPosition = window.scrollY;
 
     if (scrollPosition >= 1) {
-        console.log("scrolled");
         logoContainer.classList.add("header-scroll");
         cover.classList.add("cover-scroll");
         fade1.classList.remove("fade-long");

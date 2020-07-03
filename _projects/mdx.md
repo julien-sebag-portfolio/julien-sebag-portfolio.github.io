@@ -32,7 +32,7 @@ Object created on Arduino for the software, and our hands for the hardware.
 
 Smart object for the kitchen, aiming at disabled and elderly people. The aim of this object is to help them in their everyday life.
     "
-    img="poster-smart-cooker.png"
+    img="poster-smart-cooker.jpg"
     website_ext=false
     video="https://www.youtube.com/embed/UPfj5DfxjXs"
     side="right"
@@ -50,7 +50,7 @@ Smart object for the kitchen, aiming at disabled and elderly people. The aim of 
 Augmented Reality application, developed on Unity and using the library Vuforia for AR.
 
 The idea of this app is that children can collect items with an NFC chip, which will react with the app to show virtual animals on the screen of a smartphone or a tablet"
-    img="poster-ar-zoo.png"
+    img="poster-ar-zoo.jpg"
     website_ext=false
     video="https://www.youtube.com/embed/NDFs6mpai_k"
     side="left"

@@ -39,7 +39,7 @@ Creation of a strategic recommendation for the client L’Amuse Bouche, to enter
     include col-project.html
     title="Web Design"
     text="Design and development of the agency's website"
-    img="maquette-tetrys.png"
+    img="website-tetrys.jpg"
     website_ext=true
     website="/tetrys/"
     side="right"
@@ -51,7 +51,7 @@ Creation of a strategic recommendation for the client L’Amuse Bouche, to enter
     include col-project.html
     title="Logo"
     text="Creation of the logo of the agency"
-    img="logo_tetrys.png"
+    img="logo-tetrys.png"
     website_ext=false
     bg_img=true
     side="left"
@@ -63,7 +63,7 @@ Creation of a strategic recommendation for the client L’Amuse Bouche, to enter
     include col-project.html
     title="Print Design"
     text="Creation of sales brochures for the agency"
-    img="plaquette_tetrys.png"
+    img="brochure-tetrys.png"
     website_ext=false
     bg_img=true
     side="right"
@@ -78,7 +78,7 @@ Creation of a strategic recommendation for the client L’Amuse Bouche, to enter
     include col-project.html
     title="UX Design"
     text="Establishment of a new application, merging both apps Galeries Lafayette and Galeries Lafayette Haussmann, by keeping the brands universe by harmonizing them, in order to simplify the user experience and improve usability"
-    img="appli-galleries.png"
+    img="screens-galeries-lafayette.png"
     website_ext=false
     bg_img=true
     side="left"
@@ -93,7 +93,7 @@ Creation of a strategic recommendation for the client L’Amuse Bouche, to enter
     include col-project.html
     title="Video"
     text="Video about the copywriter position for a challenge"
-    img="poster-cr.png"
+    img="poster-copywriter.jpg"
     website_ext=false
     video="https://www.youtube.com/embed/hKJlP5FXF68"
     side="right"
@@ -105,7 +105,7 @@ Creation of a strategic recommendation for the client L’Amuse Bouche, to enter
     include col-project.html
     title="Video"
     text="Video in motion design about Nintendo"
-    img="poster-nintendo.png"
+    img="poster-nintendo.jpg"
     website_ext=false
     video="https://www.youtube.com/embed/a4hQE9sJGAQ"
     side="left"
@@ -135,7 +135,7 @@ Creation of a strategic recommendation for the client L’Amuse Bouche, to enter
     include col-project.html
     title="Infographic"
     text="Infographic about SEO"
-    img="info_referencement.png"
+    img="infographic-seo.jpg"
     website_ext=false
     side="left"
     bg="9"
@@ -146,7 +146,7 @@ Creation of a strategic recommendation for the client L’Amuse Bouche, to enter
     include col-project.html
     title="Infographic"
     text="Infographic about food wasting"
-    img="infographie_gaspillage.png"
+    img="infographic-food-waste.jpg"
     website_ext=false
     side="right"
     bg="2"
@@ -159,8 +159,8 @@ Creation of a strategic recommendation for the client L’Amuse Bouche, to enter
 {%
     include col-project.html
     title="Advertising"
-    text="Homework about advertising with slogan, with the subject Viagra"
-    img="viagra.png"
+    text="Homework about advertising without slogan, with the subject Viagra"
+    img="poster-viagra.jpg"
     website_ext=false
     side="left"
     bg="11"

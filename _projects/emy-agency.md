@@ -42,7 +42,7 @@ Furthermore, the agency acquired several generic domain names, in the purpose to
     include col-project.html
     title="Emy Agency website"
     text="Redesign and development of the agency website"
-    img="emy-agency.png"
+    img="website-emy-agency.jpg"
     website_ext=true
     website="https://www.emy-agency.com/"
     side="right"
@@ -54,7 +54,7 @@ Furthermore, the agency acquired several generic domain names, in the purpose to
     include col-project.html
     title="Mariage.be"
     text="Wireframing in accordance with the different types of users defined by the agency, mockups (Photoshop) and development of the website Mariage.be, in team with a developer working on the back office"
-    img="mariage.png"
+    img="website-mariage-be.jpg"
     website_ext=true
     website="https://www.mariage.be/"
     side="left"
@@ -66,7 +66,7 @@ Furthermore, the agency acquired several generic domain names, in the purpose to
     include col-project.html
     title="Salles.be"
     text="Redesign and front end development of the website Salles.be"
-    img="salles.png"
+    img="website-salles-be.jpg"
     website_ext=true
     website="https://www.salles.be/"
     side="right"
@@ -78,7 +78,7 @@ Furthermore, the agency acquired several generic domain names, in the purpose to
     include col-project.html
     title="SeniorLife.be"
     text="Design and front end development of the website SeniorLife.be"
-    img="senior-life.png"
+    img="website-senior-life-be.jpg"
     website_ext=true
     website="http://www.seniorlife.be/"
     side="left"
@@ -90,7 +90,7 @@ Furthermore, the agency acquired several generic domain names, in the purpose to
     include col-project.html
     title="GuideAnniversaire.be"
     text="Design and front end development of the website GuideAnniversaire.be"
-    img="guide-anniversaire.png"
+    img="website-guide-anniversaire-be.jpg"
     website_ext=true
     website="http://www.guide-anniversaire.be/"
     side="right"

@@ -33,7 +33,7 @@ The restaurant L’Amuse Bouche, specialized in "rapid gastronomy", needs to inc
     include col-project.html
     title="Web Design"
     text="Design and development of the restaurant's website"
-    img="lab.png"
+    img="website-lab.jpg"
     website="http://www.l-ab.fr/"
     website_ext=true
     side="right"
@@ -45,7 +45,7 @@ The restaurant L’Amuse Bouche, specialized in "rapid gastronomy", needs to inc
     include col-project.html
     title="Stickers"
     text="Creation of a sticker's board to show prices in the restaurant"
-    img="sticker_bar_mdld.png"
+    img="sticker-board-lab.jpg"
     website_ext=false
     side="left"
     bg="10"
@@ -56,7 +56,7 @@ The restaurant L’Amuse Bouche, specialized in "rapid gastronomy", needs to inc
     include col-project.html
     title="Business Cards"
     text="Creation of business cards"
-    img="carte_visite_lab.png"
+    img="business-cards-lab.png"
     website_ext=false
     bg_img=true
     side="right"
@@ -68,7 +68,7 @@ The restaurant L’Amuse Bouche, specialized in "rapid gastronomy", needs to inc
     include col-project.html
     title="Posters"
     text="Creation of posters to show in the restaurant and on catering sites"
-    img="poster-lab.png"
+    img="poster-lab.jpg"
     website_ext=false
     side="left"
     bg="6"
@@ -79,7 +79,7 @@ The restaurant L’Amuse Bouche, specialized in "rapid gastronomy", needs to inc
     include col-project.html
     title="Stickers"
     text="Creation of a stickers board to show on catering sites"
-    img="sticker-board-lab.png"
+    img="board-catering-lab.jpg"
     website_ext=false
     side="right"
     bg="1"
@@ -90,7 +90,7 @@ The restaurant L’Amuse Bouche, specialized in "rapid gastronomy", needs to inc
     include col-project.html
     title="Kakemono"
     text="Creation of a kakemono to show on catering sites"
-    img="kakemono-lab.png"
+    img="kakemono.jpg"
     website_ext=false
     side="left"
     bg="3"
@@ -101,7 +101,7 @@ The restaurant L’Amuse Bouche, specialized in "rapid gastronomy", needs to inc
     include col-project.html
     title="Flyers"
     text="Creation of flyers to advertise the restaurant"
-    img="flyers-lab.png"
+    img="flyers-lab.jpg"
     website_ext=false
     bg_img=true
     side="right"
