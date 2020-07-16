@@ -5,7 +5,7 @@ side: left
 bg: 3
 bg_color: orange
 link: /blog-demo/
-img: blog.jpg
+img: website-blog.jpg
 ---
 
 Blog template
