@@ -1,11 +1,17 @@
-<script>
-    var userLang = navigator.language || navigator.userLanguage;
-    switch (userLang) {
-        case 'fr':
-            window.location.href = '/fr/';
-            break;
-        default:
-            window.location.href = '/en/';
-            break;
-    }
-</script>
+---
+title: Home
+desc: Portfolio of Julien Sebag, UX / UI / Web designer based in Warsaw, PL.
+---
+
+<ul class="list-projects">
+    {% assign projects = site.projects | sort: "order" %}
+    {% for project in projects %}
+    <li class="fade fade-delay-{{ project.order }}">
+        <div class="bg-stripes-{{ project.order }} bg-{{ project.bg_color }}"></div>
+        <a href="{{ project.url }}" style="background: url(/assets/images/l-{{project.cover}})">
+            <p class="project-title">{{ project.title }}</p>
+            <p class="project-position">{{ project.position }}</p>
+        </a>
+    </li>
+    {% endfor %}
+</ul>
