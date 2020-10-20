@@ -10,7 +10,7 @@ position: Designer & Developer
 city: Hamburg
 next_project: emy-agency
 skills:
- - Sketch
+ - Figma
  - Illustrator
  - HTML
  - SCSS
@@ -24,7 +24,10 @@ Personal project.
 #### Context
 
 {:.fade}
-Tired of using Bootstrap and other heavy CSS frameworks, and reusing a lot of components at my job, I decided to create my own SCSS framework to save time. The idea of Fajny (pronounce /ˈfaj.nɨ/, meaning cool in Polish) was to make a light weight, complete, easy to use and personalise SCSS framework. It is of course responsive, and since it does not use JavaScript it’s compatible with most of modern frameworks.
+Tired of using Bootstrap and other heavy CSS frameworks, and reusing a lot of components at my job, I decided to create my own SCSS framework to save time. The idea of Fajny (pronounce /ˈfaj.nɨ/, meaning cool in Polish) was to make a light weight, complete, easy to use and personalise SCSS framework. It is of course responsive.
+
+{:.fade}
+The first version did not use JavaScript, but the 2.0 uses a bit, with always SCSS counterparts.
 
 {:.fade}
 #### Process
@@ -32,7 +35,7 @@ Tired of using Bootstrap and other heavy CSS frameworks, and reusing a lot of co
 {%
     include col-project.html
     title="Design"
-    text="Design of all the components in Sketch"
+    text="Design of all the components on Figma"
     img="components-fajny-css.jpg"
     website_ext=false
     side="right"
@@ -43,7 +46,7 @@ Tired of using Bootstrap and other heavy CSS frameworks, and reusing a lot of co
 {%
     include col-project.html
     title="Icons"
-    text="Creation of an icon font in three different weights and brand icons"
+    text="Creation of an icon font in two different weights and brand icons"
     img="icons-fajny-css.jpg"
     website_ext=false
     side="left"
@@ -53,12 +56,24 @@ Tired of using Bootstrap and other heavy CSS frameworks, and reusing a lot of co
 
 {%
     include col-project.html
+    title="Figma"
+    text="Creation of a Figma components library to download"
+    img="figma-file-fajny-css.jpg"
+    website="https://www.figma.com/file/mXSkQtWqgcexCNypVvJ9FG/Fajny-CSS-Components-library/duplicate"
+    website_ext=true
+    side="right"
+    bg="4"
+    bg_color="green"
+%}
+
+{%
+    include col-project.html
     title="Documentation"
     text="Development of the components in HTML and SCSS, and of the documentation website on Jekyll"
     img="website-fajny-css.jpg"
     website="https://fajny-css.github.io/"
     website_ext=true
-    side="right"
+    side="left"
     bg="5"
     bg_color="orange"
 %}
