@@ -44,6 +44,13 @@ h1 {
     @media (max-width: $breakpoint-mobile) {
         @include font-size(32px);
     }
+
+    &.hidden {
+        position: absolute;
+        top: -999em;
+        left: -999em;
+        opacity: 0;
+    }
 }
 
 h2 {
